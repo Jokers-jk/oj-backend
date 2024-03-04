@@ -1,6 +1,8 @@
 package com.joker.oj.model.dto.questionsubmit;
 
+import com.joker.oj.common.PageRequest;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
 
@@ -8,7 +10,8 @@ import java.io.Serializable;
  * 创建请求
  */
 @Data
-public class QuestionSubmitAddRequest implements Serializable {
+@EqualsAndHashCode(callSuper = true)
+public class QuestionSubmitQueryRequest extends PageRequest implements Serializable {
 
 
     /**
@@ -17,15 +20,20 @@ public class QuestionSubmitAddRequest implements Serializable {
     private String language;
 
     /**
-     * 用户代码
+     * 提交状态
      */
-    private String code;
+    private Integer status;
 
 
     /**
      * 题目 id
      */
     private Long questionId;
+
+    /**
+     * 用户id
+     */
+    private Long userId;
 
 
 
