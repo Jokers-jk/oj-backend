@@ -40,6 +40,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/question")
 @Slf4j
+@CrossOrigin
 public class QuestionController {
 
     @Resource

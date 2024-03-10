@@ -4,8 +4,7 @@ import cn.hutool.json.JSONUtil;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 
-import com.joker.oj.model.dto.question.JudgeCase;
-import com.joker.oj.model.dto.questionsubmit.JudgeInfo;
+import com.joker.oj.judge.codesandbox.model.JudgeInfo;
 import com.joker.oj.model.entity.QuestionSubmit;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;
